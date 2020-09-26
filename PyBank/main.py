@@ -9,20 +9,39 @@ csvpath = os.path.join('resources','02-Homework_03-Python_Instructions_Pybank_Re
 
 #Define Variables
 
-Dates = []
-Totals = []
+#Dates = []
+#Totals = []
+Mydict = {}
 
 #Open CSV File
 
 with open(csvpath, 'r') as csv_file:
     csvreader = csv.reader(csv_file, delimiter= ",")
-
+    csv_header = next(csv_file)
+#Iterate
     for row in csvreader:
-        Dates.append(row[0])
-        Totals.append(row[1])
+        Mydict[row[0]] = {row[1]}
+    
+    Value = Mydict.values()
+    #Total = sum(Value)
+    print(Mydict)
+    print(len(Mydict))
+    print(Value)
+    # print(Value)
+    #print(Total)
+        
+        #Dates.append(row[0])
+        #Totals.append(row[1])
+#Number of months
+    #Numbmonth = len(Dates)
+    #print(Numbmonth)
 
-print(Dates)
-print(Totals)
+#Total Profit/Loss 
+    #Profitloss = sum(Totals)
+    #print(Profitloss)
+
+#Largest
+
 
 
 #Skip Header and define variables and list
