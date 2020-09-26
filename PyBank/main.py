@@ -22,13 +22,20 @@ with open(csvpath, 'r') as csv_file:
     for row in csvreader:
         Mydict[row[0]] = {row[1]}
     
-    Value = Mydict.values()
-    #Total = sum(Value)
+    Profitloss = Mydict.values()
+    #Total = sum(Profitloss)
     print(Mydict)
     print(len(Mydict))
     print(Value)
-    # print(Value)
+    # print(Profitloss)
     #print(Total)
+
+
+
+
+
+
+    
         
         #Dates.append(row[0])
         #Totals.append(row[1])
