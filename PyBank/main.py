@@ -30,3 +30,4 @@ with open(csvpath, 'r') as csv_file:
     Minnumber = (min(Profitloss))
     print(Minnumber)
     print(Largenumber)
+    print(Minnumber in Mydict)
