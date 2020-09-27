@@ -16,12 +16,18 @@ Mydict = {}
 with open(csvpath, 'r') as csv_file:
     csvreader = csv.reader(csv_file, delimiter= ",")
     csv_header = next(csv_file)
-#Iterate
+
+#Iterate and create Month:Change dictionary
+    
     for row in csvreader:
         Mydict[row[0]] = int(row[1])
+
+#Define Values   
     
     Profitloss = Mydict.values()
     Total = sum(Profitloss)
+
+#Print Stuff
 
     print(Profitloss)
     print(Total)
