@@ -10,6 +10,7 @@ Timedict = {}
 with open(csvpath, 'r') as csv_file:
     csvreader = csv.reader(csv_file, delimiter= ",")
     csv_header = next(csv_file)
+    print(f"Header: {csv_header}")
 #Iterate and fill both dictionaries necessary
     for row in csvreader:
         Valuedict[row[0]] = int(row[1])
