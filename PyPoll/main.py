@@ -44,18 +44,18 @@ with open(csvpath, 'r') as csv_file:
     CorreyPercent = round(CorreyCounter / TotalVotes * 100, 2)
     LiPercent = round(LiCounter / TotalVotes * 100, 2)
 #Print analysis
-    print(f"""Election Results
-    ----------------------
-    Total Votes: {TotalVotes}
-    ----------------------
-    Khan: {KhanPercent}% ({KhanCounter})
-    Correy: {CorreyPercent}% ({CorreyCounter})
-    Li: {LiPercent}% ({LiCounter})
-    O'Tooley {OtooleyPercent}% ({OtooleyCounter})
-    ----------------------
-    Winner = {Winner}
-    ----------------------"""
-    )
+print(f"""Election Results
+----------------------
+Total Votes: {TotalVotes}
+----------------------
+Khan: {KhanPercent}% ({KhanCounter})
+Correy: {CorreyPercent}% ({CorreyCounter})
+Li: {LiPercent}% ({LiCounter})
+O'Tooley {OtooleyPercent}% ({OtooleyCounter})
+----------------------
+Winner = {Winner}
+----------------------"""
+)
 #Write file
 # #Write the file
 analysis = open('analysis/Analysis.txt', 'w')
